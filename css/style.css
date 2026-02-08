@@ -255,12 +255,14 @@ a:hover {
 
 .hero-text .terminal-output-line {
     margin: 0;
-    padding-left: 1rem; /* Indentazione per l'output */
+    text-align: center;
     color: var(--text-color);
 }
 
-.hero-text .terminal-key {
-    color: var(--primary-color);
+.hero-text .terminal-prompt {
+    color: var(--secondary-color);
+    text-align: center;
+}
 }
 
 .hero-text .cursor {
@@ -907,48 +909,37 @@ a:hover {
   font-family: 'JetBrains Mono', monospace;
   font-size: 1rem;
   text-decoration: none;
-  background: #21262c;
+  background: transparent;
   color: #c9d1d9;
-  border: 1px solid #30363d;
-  transition: background 0.2s, color 0.2s, border 0.2s;
+  border: none;
+  transition: color 0.2s;
 }
 .hero-link-btn.github {
-  background: #161b22;
   color: #fff;
-  border-color: #2ea043;
 }
 .hero-link-btn.linkedin {
-  background: #0a66c2;
-  color: #fff;
-  border-color: #0a66c2;
+  color: #0a66c2;
 }
 .hero-link-btn.email {
-  background: #2ea043;
-  color: #fff;
-  border-color: #2ea043;
+  color: #2ea043;
 }
 .hero-link-btn.cv {
-  background: #c9d1d9;
-  color: #161b22;
-  border-color: #c9d1d9;
+  color: #c9d1d9;
 }
 .hero-link-btn:hover {
-  background: #2ea043;
-  color: #fff;
-  border-color: #2ea043;
+  color: #2ea043;
 }
 .hero-link-btn.github:hover {
-  background: #238636;
+  color: #238636;
 }
 .hero-link-btn.linkedin:hover {
-  background: #084c8d;
+  color: #084c8d;
 }
 .hero-link-btn.email:hover {
-  background: #238636;
+  color: #238636;
 }
 .hero-link-btn.cv:hover {
-  background: #fff;
-  color: #2ea043;
+  color: #fff;
 }
 
 /* Hero Description */

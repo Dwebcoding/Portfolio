@@ -52,55 +52,18 @@
     <div id="particles-bg" style="position:fixed;top:0;left:0;width:100%;height:100vh;z-index:-1;pointer-events:none;"></div>
 
     <!-- Primary Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
-        <div class="container">
-<a class="navbar-brand" href="index.html">
-  <img src="Assets/Images/Portfolio/Logo White.png" alt="D Webcoding Logo" height="60">
-</a>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto align-items-center">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.html" data-i18n="nav_home"><i class="fas fa-home"></i> /home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="html/projects.html" data-i18n="nav_projects"><i class="fas fa-code-branch"></i> /projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="html/about.html" data-i18n="nav_about"><i class="fas fa-user-circle"></i> /about</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="html/contact.html" data-i18n="nav_contact"><i class="fas fa-envelope"></i> /contact</a>
-                    </li>
-                    <!-- Language Switcher Component -->
-                    <li class="nav-item lang-switcher">
-                        <a href="#" class="lang-switch" data-lang="it">IT</a>
-                        <span style="color: var(--border-color);">/</span>
-                        <a href="#" class="lang-switch" data-lang="en">EN</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <div id="navbar-placeholder"></div>
 
     <!-- Hero Section with Terminal Animation -->
     <main class="container">
         <section id="hero-terminal" class="hero-section">
             <div class="hero-text terminal-text" style="position:relative;z-index:1;">
                 <div class="terminal-centered">
-                    <pre class="terminal-pre" id="hero-typewriter"></pre>
-                                    <div class="hero-description mt-4">
-                                        <p class="text-center matrix-text" id="hero-description" data-i18n="hero_description">
-                                            Sono Lorenzo Delibero, uno sviluppatore web appassionato specializzato in soluzioni front-end moderne e performanti. 
-                                            Creo esperienze digitali innovative utilizzando HTML, CSS, JavaScript e framework come Bootstrap, 
-                                            con un focus su design responsive e ottimizzazione delle prestazioni.
-                                        </p>
-                                    </div>
+                    <div id="hero-terminal-output">
+                        <pre class="terminal-pre" id="hero-typewriter"></pre>
+                    </div>
                                     <div class="hero-links">
-                                        <a href="https://github.com/Dwebcoding/Dwebcoding-Portfolio" class="hero-link-btn github" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+                                        <a href="https://github.com/Dwebcoding" class="hero-link-btn github" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
                                         <a href="https://www.linkedin.com/in/dwebcoding/" class="hero-link-btn linkedin" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i> LinkedIn</a>
                                         <a href="mailto:d.webcoding@gmail.com" class="hero-link-btn email"><i class="fas fa-envelope"></i> Email</a>
                                         <a href="/Assets/Images/Portfolio/CV_LorenzoDelibero.pdf" class="hero-link-btn cv" target="_blank" rel="noopener"><i class="fas fa-file-alt"></i> CV</a>
@@ -447,6 +410,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="js/navbar.js"></script>
     <script src="js/main.js"></script>
     <script src="js/particles-config.js"></script>
     <script src="js/home-slider.js" defer></script>

@@ -178,6 +178,15 @@ class LanguageManager {
     const cta = langData.hero_cta;
 
     try {
+      // CTA visible from start
+      const isInSubfolder = window.location.pathname.includes('/html/');
+      const pathPrefix = isInSubfolder ? '' : 'html/';
+      
+      const ctaElement = document.createElement('p');
+      ctaElement.className = 'terminal-prompt';
+      ctaElement.innerHTML = `$ <a href="${pathPrefix}projects.html" class="terminal-link">${cta}</a>`;
+      ctaContainer.appendChild(ctaElement);
+
       // Command input animation
       const commandElement = document.createElement('p');
       commandElement.className = 'terminal-prompt';
@@ -206,28 +215,7 @@ class LanguageManager {
       await new Promise(resolve => setTimeout(resolve, 400));
       if (currentId !== this.terminalAnimationId) return;
 
-      // Description animation
-      const descElement = document.getElementById('hero-description');
-      if (descElement) {
-        const descText = descElement.dataset.i18n ? translations[this.currentLang][descElement.dataset.i18n] : descElement.textContent;
-        descElement.textContent = '';
-        await this.typewriter(descElement, descText, 30);
-        if (currentId !== this.terminalAnimationId) return;
-      }
-
-      await new Promise(resolve => setTimeout(resolve, 400));
-      if (currentId !== this.terminalAnimationId) return;
-
-      // CTA animation
-      const isInSubfolder = window.location.pathname.includes('/html/');
-      const pathPrefix = isInSubfolder ? '' : 'html/';
-      
-      const ctaElement = document.createElement('p');
-      ctaElement.className = 'terminal-prompt';
-      ctaElement.innerHTML = `$ <a href="${pathPrefix}projects.html" class="terminal-link"></a>`;
-      ctaContainer.appendChild(ctaElement);
-      
-      await this.typewriter(ctaElement.querySelector('a'), cta);
+      // CTA already visible, no additional animation needed
     } catch (error) {
       console.warn('Terminal animation interrupted:', error);
     }
