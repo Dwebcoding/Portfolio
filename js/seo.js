@@ -15,7 +15,7 @@ const seoManager = {
             "jobTitle": "Web Developer",
             "url": "https://dwebcoding.github.io/",
             "sameAs": [
-                "https://github.com/Dwebcoding",
+                "https://github.com/Dwebcoding/Dwebcoding-Portfolio",
                 "https://www.linkedin.com/in/dwebcoding/",
                 "https://wa.me/393882566019"
             ],

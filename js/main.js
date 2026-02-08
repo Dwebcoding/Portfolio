@@ -94,7 +94,7 @@ function loadFooter() {
                         <a href="mailto:d.webcoding@gmail.com" aria-label="Email">
                             <i class="fas fa-envelope"></i> Email
                         </a>
-                        <a href="https://github.com/Dwebcoding" target="_blank" rel="noopener" aria-label="GitHub">
+                        <a href="https://github.com/Dwebcoding/Dwebcoding-Portfolio" target="_blank" rel="noopener" aria-label="GitHub">
                             <i class="fab fa-github"></i> GitHub
                         </a>
                         <a href="https://www.linkedin.com/in/dwebcoding/" target="_blank" rel="noopener" aria-label="LinkedIn">

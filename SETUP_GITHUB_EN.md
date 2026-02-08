@@ -30,7 +30,7 @@ cd "C:\Users\CAdre\Desktop\PC\Portfolio\DWebcoding - Portfolio"
 git init
 
 # Add remote (replace "yourusername" with your GitHub username)
-git remote add origin https://github.com/yourusername/portfolio.git
+git remote add origin https://github.com/Dwebcoding/Dwebcoding-Portfolio.git
 
 # Configure git with your data (use once)
 git config user.name "Your Name"
@@ -75,7 +75,7 @@ In README.md, replace placeholders with your real data:
 **Lorenzo Delibero**
 - Email: your.email@example.com
 - LinkedIn: linkedin.com/in/yourusername
-- GitHub: github.com/yourusername
+- GitHub: github.com/Dwebcoding
 - Website: yourusername.github.io
 ```
 
@@ -96,7 +96,7 @@ git push
 
 ## Final Links to Use
 
-- **Repository**: `https://github.com/yourusername/portfolio`
+- **Repository**: `https://github.com/Dwebcoding/Dwebcoding-Portfolio`
 - **Live Portfolio**: `https://yourusername.github.io`
 - **Portfolio on GitHub Pages**: `https://yourusername.github.io/portfolio` (if not using .github.io)
 

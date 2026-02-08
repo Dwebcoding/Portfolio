@@ -185,6 +185,14 @@ a:hover {
     min-height: 60vh;
     position: relative;
     overflow: hidden;
+.hero-section {
+    min-height: 60vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #hero-bg {
@@ -203,10 +211,25 @@ a:hover {
     font-size: 1.2rem; /* Leggermente ridotto per più linee */
     width: 100%;
     max-width: 650px; /* Larghezza massima per leggibilità */
+.hero-text {
+    position: relative;
+    z-index: 1;
+    font-size: 1.2rem;
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .hero-text .terminal-prompt {
     color: var(--secondary-color);
+.terminal-centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero-text .terminal-prompt span,

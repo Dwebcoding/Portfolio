@@ -4,7 +4,7 @@ Modern, responsive portfolio website with terminal-inspired design and multiling
 
 ## Live Demo
 
-**[View Portfolio](https://dlwdesign.github.io/portfolio)**
+**[View Portfolio](https://dwebcoding.github.io/Dwebcoding-Portfolio/)**
 
 ## Overview
 
@@ -126,7 +126,7 @@ DWebcoding - Portfolio/
 
 1. **Clone the repository:**
 ```bash
-git clone https://github.com/DLWDesign/portfolio.git
+git clone https://github.com/Dwebcoding/Dwebcoding-Portfolio.git
 cd portfolio
 ```
 
@@ -206,7 +206,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Email: d.webcoding@gmail.com
 - LinkedIn: [linkedin.com/in/dwebcoding](https://linkedin.com/in/dwebcoding)
 - GitHub: [github.com/Dwebcoding](https://github.com/Dwebcoding)
-- Portfolio: [dlwdesign.github.io](https://dlwdesign.github.io)
+- Repository: [github.com/Dwebcoding/Dwebcoding-Portfolio](https://github.com/Dwebcoding/Dwebcoding-Portfolio)
+- Portfolio: [dwebcoding.github.io/Dwebcoding-Portfolio](https://dwebcoding.github.io/Dwebcoding-Portfolio/)
 
 ---
 
