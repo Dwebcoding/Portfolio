@@ -181,11 +181,7 @@ a:hover {
 /* Page-Specific Sections */
 
 /* Hero Section */
-.hero-section {
-    min-height: 60vh;
-    position: relative;
-    overflow: hidden;
-.hero-section {
+ .hero-section {
     min-height: 60vh;
     position: relative;
     overflow: hidden;
@@ -205,13 +201,7 @@ a:hover {
   pointer-events: none;
 }
 
-.hero-text {
-    position: relative;
-    z-index: 1;
-    font-size: 1.2rem; /* Leggermente ridotto per più linee */
-    width: 100%;
-    max-width: 650px; /* Larghezza massima per leggibilità */
-.hero-text {
+ .hero-text {
     position: relative;
     z-index: 1;
     font-size: 1.2rem;
@@ -221,11 +211,12 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .hero-text .terminal-prompt {
     color: var(--secondary-color);
-.terminal-centered {
+ .terminal-centered {
     display: flex;
     flex-direction: column;
     align-items: center;
