@@ -79,7 +79,6 @@ document.addEventListener('DOMContentLoaded', function() {
         subtree: true
     });
 });
-=======
 /**
  * Island Screenshot Slider
  * Handles screenshot gallery navigation for project cards
@@ -161,4 +160,3 @@ document.addEventListener('DOMContentLoaded', function() {
         subtree: true
     });
 });
->>>>>>> dd94f2ed607aa855ac339d05811801a492122e1e

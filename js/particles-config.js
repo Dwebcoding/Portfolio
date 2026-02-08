@@ -77,7 +77,6 @@ particlesJS('hero-bg', {
   },
   retina_detect: true
 });
-=======
 // particles.js configuration for hero background
 particlesJS('hero-bg', {
   particles: {
@@ -157,4 +156,3 @@ particlesJS('hero-bg', {
   },
   retina_detect: true
 });
->>>>>>> dd94f2ed607aa855ac339d05811801a492122e1e

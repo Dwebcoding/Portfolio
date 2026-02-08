@@ -262,7 +262,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
-=======
 /**
  * Main Application Controller
  * Handles DOM manipulation, event delegation, and performance optimizations
@@ -474,5 +473,4 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
->>>>>>> dd94f2ed607aa855ac339d05811801a492122e1e
 });

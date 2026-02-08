@@ -193,7 +193,6 @@ const translations = {
     terms_contact: "Contatto",
     terms_contact_text: "Per domande su questi termini, contatta: lorenzo.delibero@email.com | Tel: +39 388 256 6019"
   }
-=======
 /**
  * Internationalization Data Structure
  * Centralized translation strings for multilingual support
@@ -389,5 +388,4 @@ const translations = {
     terms_contact: "Contatto",
     terms_contact_text: "Per domande su questi termini, contatta: lorenzo.delibero@email.com | Tel: +39 388 256 6019"
   }
->>>>>>> dd94f2ed607aa855ac339d05811801a492122e1e
 };

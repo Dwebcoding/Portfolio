@@ -124,7 +124,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 });
-=======
 /**
  * Home Projects Slider
  * Interactive project showcase with smooth transitions
@@ -251,4 +250,3 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 });
->>>>>>> dd94f2ed607aa855ac339d05811801a492122e1e

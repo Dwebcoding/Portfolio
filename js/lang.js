@@ -242,7 +242,6 @@ class LanguageManager {
 }
 
 // Global instance
-=======
 /**
  * Internationalization Management System
  * Handles language switching, localStorage persistence, and DOM translation
@@ -487,5 +486,4 @@ class LanguageManager {
 }
 
 // Global instance
->>>>>>> dd94f2ed607aa855ac339d05811801a492122e1e
 const languageManager = new LanguageManager();
