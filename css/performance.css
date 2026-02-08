@@ -1,0 +1,62 @@
+/**
+ * Performance Optimization Stylesheet
+ * Critical rendering path and animation optimizations
+ */
+
+/* Critical rendering path optimization */
+.hero-section {
+    contain: layout style paint;
+}
+
+.project-card {
+    contain: layout style;
+}
+
+/* GPU acceleration for smooth animations */
+.cursor,
+.project-image,
+.site-preview-iframe,
+.btn,
+.nav-link {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+}
+
+/* Font loading optimization */
+@font-face {
+    font-family: 'JetBrains Mono';
+    font-display: swap;
+    src: url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+}
+
+/* Lazy loading image transitions */
+img[loading="lazy"] {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+img[loading="lazy"].loaded {
+    opacity: 1;
+}
+
+/* Layout shift prevention */
+.project-image-wrapper {
+    aspect-ratio: 16/9;
+    background-color: var(--background-color);
+}
+
+/* Smooth scrolling optimization */
+html {
+    scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+/* Critical CSS inlining optimization */
+.above-fold {
+    critical: true;
+}

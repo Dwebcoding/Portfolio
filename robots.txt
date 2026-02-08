@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dwebcoding.github.io/sitemap.xml

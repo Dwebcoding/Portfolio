@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Test Suite - Portfolio</title>
+    
+    <!-- External Stylesheets -->
+    <link rel="stylesheet" href="../css/mobile-test.css">
+</head>
+<body>
+    <div class="test-container">
+        <h1>Mobile Optimization Test Suite</h1>
+
+        <!-- Viewport Information Display -->
+        <div class="test-section">
+            <h2>Viewport Information</h2>
+            <p id="viewport-info">Loading...</p>
+            <p id="breakpoint-indicator">Loading...</p>
+            <p id="perf-result">Running performance test...</p>
+            <div class="note">
+                <strong>Open DevTools (F12) → Toggle Device Toolbar (Ctrl+Shift+M) to test breakpoints</strong>
+            </div>
+        </div>
+
+        <!-- Responsive Breakpoint Tests -->
+        <div class="test-section">
+            <h2>Breakpoint Tests</h2>
+
+            <div class="viewport-test">
+                <div class="viewport-label">iPhone SE (375px)</div>
+                <div class="demo-project-card">
+                    <div class="demo-project-image">Project Screenshot</div>
+                    <div class="demo-project-content">
+                        <div class="demo-project-title">$ Project 1</div>
+                        <div class="demo-project-description">Brief project description...</div>
+                        <div class="demo-tech-list">
+                            <div class="demo-tech-badge">html</div>
+                            <div class="demo-tech-badge">css</div>
+                            <div class="demo-tech-badge">bootstrap</div>
+                        </div>
+                        <div class="demo-project-actions">
+                            <button class="demo-btn">GitHub</button>
+                            <button class="demo-btn">Visit</button>
+                        </div>
+                    </div>
+                </div>
+                <p style="margin-top: 10px; font-size: 0.85rem; opacity: 0.7;">
+                    Buttons in column | No overflow | Centered and visible
+                </p>
+            </div>
+
+            <div class="viewport-test" style="margin-top: 30px;">
+                <div class="viewport-label">iPhone 12/13 (430px)</div>
+                <div class="demo-project-card" style="max-width: 430px;">
+                    <div class="demo-project-image">Project Screenshot</div>
+                    <div class="demo-project-content">
+                        <div class="demo-project-title">$ Project 2</div>
+                        <div class="demo-project-description">Brief project description...</div>
+                        <div class="demo-tech-list">
+                            <div class="demo-tech-badge">html</div>
+                            <div class="demo-tech-badge">bootstrap</div>
+                            <div class="demo-tech-badge">javascript</div>
+                        </div>
+                        <div class="demo-project-actions">
+                            <button class="demo-btn">GitHub</button>
+                            <button class="demo-btn">Visit</button>
+                        </div>
+                    </div>
+                </div>
+                <p style="margin-top: 10px; font-size: 0.85rem; opacity: 0.7;">
+                    Buttons: 44px min-height | Ideal touch target | Vertical spacing
+                </p>
+            </div>
+        </div>
+
+        <!-- Optimization Checklist -->
+        <div class="test-section">
+            <h2>Mobile Optimization Checklist</h2>
+            <ul class="checklist">
+                <li><span class="checkmark">✓</span> Viewport meta tag configured</li>
+                <li><span class="checkmark">✓</span> Touch targets ≥ 44px</li>
+                <li><span class="checkmark">✓</span> Responsive breakpoints</li>
+                <li><span class="checkmark">✓</span> Readable fonts on mobile</li>
+                <li><span class="checkmark">✓</span> Optimized images</li>
+                <li><span class="checkmark">✓</span> Performance optimized</li>
+            </ul>
+        </div>
+
+        <!-- Testing Instructions -->
+        <div class="test-section">
+            <h2>Test Instructions</h2>
+            <div class="instruction-grid">
+                <div class="instruction-card">
+                    <h3>Breakpoint Test</h3>
+                    <p>Use DevTools to test 375px, 430px, 768px, 1024px</p>
+                </div>
+                <div class="instruction-card">
+                    <h3>Touch Test</h3>
+                    <p>Verify all buttons are easily clickable</p>
+                </div>
+                <div class="instruction-card">
+                    <h3>Performance</h3>
+                    <p>Check loading times and animations</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- External JavaScript -->
+    <script src="../js/mobile-test.js"></script>
+</body>
+</html>

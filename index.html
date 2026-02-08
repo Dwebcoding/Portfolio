@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Language attribute updated dynamically by JavaScript -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Meta tags updated dynamically by i18n system -->
+    <title data-i18n="meta_title">Delibero Lorenzo | Web Developer</title>
+    <meta name="description" data-i18n-content="meta_description" content="Portfolio di Lorenzo Delibero, sviluppatore web specializzato in soluzioni front-end moderne e performanti.">
+    <meta name="keywords" content="Lorenzo Delibero, web developer, frontend developer, HTML, CSS, JavaScript, Bootstrap, portfolio, sviluppatore web">
+    <meta name="author" content="Lorenzo Delibero">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Delibero Lorenzo | Web Developer">
+    <meta property="og:description" content="Portfolio di Lorenzo Delibero, sviluppatore web specializzato in soluzioni front-end moderne e performanti.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dwebcoding.github.io/">
+    <meta property="og:image" content="https://dwebcoding.github.io/Assets/Images/Portfolio/Logo White.png">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Delibero Lorenzo | Web Developer">
+    <meta name="twitter:description" content="Portfolio di Lorenzo Delibero, sviluppatore web specializzato in soluzioni front-end moderne e performanti.">
+    <meta name="twitter:image" content="https://dwebcoding.github.io/Assets/Images/Portfolio/Logo White.png">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://dwebcoding.github.io/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="Assets/Images/Portfolio/Logo White.png">
+
+    <!-- Google Fonts: JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- External CDN Dependencies -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Custom Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home-projects.css">
+</head>
+<body>
+
+    <!-- Primary Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+<a class="navbar-brand" href="index.html">
+  <img src="Assets/Images/Portfolio/Logo White.png" alt="D Webcoding Logo" height="50">
+</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html" data-i18n="nav_home"><i class="fas fa-home"></i> /home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="html/projects.html" data-i18n="nav_projects"><i class="fas fa-code-branch"></i> /projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="html/about.html" data-i18n="nav_about"><i class="fas fa-user-circle"></i> /about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="html/contact.html" data-i18n="nav_contact"><i class="fas fa-envelope"></i> /contact</a>
+                    </li>
+                    <!-- Language Switcher Component -->
+                    <li class="nav-item lang-switcher">
+                        <a href="#" class="lang-switch" data-lang="it">IT</a>
+                        <span style="color: var(--border-color);">/</span>
+                        <a href="#" class="lang-switch" data-lang="en">EN</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Terminal Animation -->
+    <main class="container">
+        <section id="hero-terminal" class="hero-section">
+            <div id="hero-bg" style="position:absolute;top:0;left:0;width:100%;height:100%;z-index:0;"></div>
+            <div class="hero-text terminal-text" style="position:relative;z-index:1;">
+                                <div class="terminal-centered">
+                                    <pre class="terminal-pre">
+<span class="terminal-cmd">$ who_am_i</span>
+name: "Lorenzo Delibero"
+role: "Web Developer"
+focus: ["Structure", "Simplicity", "Performance"]
+status: "Open to collaborations and opportunities"
+
+<span class="terminal-cmd">$ view projects</span>
+                                    </pre>
+                                    <div class="hero-links">
+                                        <a href="https://github.com/Dwebcoding/Dwebcoding-Portfolio" class="hero-link-btn github" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+                                        <a href="https://www.linkedin.com/in/dwebcoding/" class="hero-link-btn linkedin" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                                        <a href="mailto:d.webcoding@gmail.com" class="hero-link-btn email"><i class="fas fa-envelope"></i> Email</a>
+                                        <a href="/Assets/Images/Portfolio/CV_LorenzoDelibero.pdf" class="hero-link-btn cv" target="_blank" rel="noopener"><i class="fas fa-file-alt"></i> CV</a>
+                                    </div>
+                                    <div id="hero-cta"></div>
+                                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects Showcase -->
+        <section class="my-5 py-5">
+            <h2 class="section-title text-center mb-5" data-aos="fade-up" data-i18n="projects_title"></h2>
+            ...existing code for projects showcase...
+        </section>
+        <!-- Technology Stack Section -->
+        <section class="my-5 py-5">
+            <h2 class="section-title text-center" data-aos="fade-up" data-i18n="skills_title"></h2>
+            ...existing code for tech stack...
+        </section>
+
+        <!-- Featured Projects Showcase -->
+        <section class="my-5 py-5">
+            <h2 class="section-title text-center mb-5" data-aos="fade-up" data-i18n="projects_title"></h2>
+            
+            <div class="projects-showcase">
+                <div class="project-slider" id="projectSlider">
+                    
+                    <!-- Project 1: Wrong Site -->
+                    <div class="project-slide active" data-project="1">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 order-lg-1">
+                                <div class="project-preview">
+                                    <img src="Assets/Images/Wrong Site Screenshot/Hero Wrong Site Screenshot.png"
+                                         alt="Wrong Site Project" 
+                                         class="img-fluid project-screenshot">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 order-lg-2">
+                                <div class="project-info terminal-text">
+                                    <span class="project-number">01/05</span>
+                                    <h3 class="project-name" data-i18n="project1_title">Wrong Site</h3>
+                                    <p class="project-desc">
+                                        <span data-i18n="project1_desc">Sito web aziendale responsive per studio creativo</span>
+                                    </p>
+                                    <div class="project-tech mb-3">
+                                        <span class="tech-badge">html</span>
+                                        <span class="tech-badge">css</span>
+                                        <span class="tech-badge">bootstrap</span>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="https://github.com/Dwebcoding/Wrong-Studio" target="_blank" class="btn btn-outline-primary btn-sm">
+                                            <i class="fab fa-github"></i> Code
+                                        </a>
+                                        <a href="https://dwebcoding.github.io/Wrong-Studio/" target="_blank" class="btn btn-primary btn-sm">
+                                            <i class="fas fa-external-link-alt"></i> Live Demo
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Cartoleria Dudù -->
+                    <div class="project-slide" data-project="2">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 order-lg-2">
+                                <div class="project-preview">
+                                    <img src="Assets/Images/Cartoleria Dudù Screenshot/Dudu Screenshot.png" 
+                                         alt="Cartoleria Dudù Project" 
+                                         class="img-fluid project-screenshot">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 order-lg-1">
+                                <div class="project-info terminal-text">
+                                    <span class="project-number">02/05</span>
+                                    <h3 class="project-name" data-i18n="project2_title">Cartoleria Dudù</h3>
+                                    <p class="project-desc">
+                                        <span data-i18n="project2_desc">E-commerce per cartoleria con catalogo interattivo</span>
+                                    </p>
+                                    <div class="project-tech mb-3">
+                                        <span class="tech-badge">html</span>
+                                        <span class="tech-badge">bootstrap</span>
+                                        <span class="tech-badge">javascript</span>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="https://github.com/Dwebcoding/Dudu-stationery" target="_blank" class="btn btn-outline-primary btn-sm">
+                                            <i class="fab fa-github"></i> Code
+                                        </a>
+                                        <a href="https://dwebcoding.github.io/Dudu-stationery/" target="_blank" class="btn btn-primary btn-sm">
+                                            <i class="fas fa-external-link-alt"></i> Live Demo
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: DREAMCAR -->
+                    <div class="project-slide" data-project="3">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 order-lg-1">
+                                <div class="project-preview">
+                                    <img src="Assets/Images/DREAMCAR Screenshot/DreamCar Screenshot.png" 
+                                         alt="DREAMCAR Project" 
+                                         class="img-fluid project-screenshot">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 order-lg-2">
+                                <div class="project-info terminal-text">
+                                    <span class="project-number">03/05</span>
+                                    <h3 class="project-name" data-i18n="project3_title">DREAMCAR</h3>
+                                    <p class="project-desc">
+                                        <span data-i18n="project3_desc">Landing page per concessionaria auto di lusso</span>
+                                    </p>
+                                    <div class="project-tech mb-3">
+                                        <span class="tech-badge">html</span>
+                                        <span class="tech-badge">css</span>
+                                        <span class="tech-badge">responsive-design</span>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="https://github.com/Dwebcoding/Dreamcar-" target="_blank" class="btn btn-outline-primary btn-sm">
+                                            <i class="fab fa-github"></i> Code
+                                        </a>
+                                        <a href="https://dwebcoding.github.io/Dreamcar-/" target="_blank" class="btn btn-primary btn-sm">
+                                            <i class="fas fa-external-link-alt"></i> Live Demo
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: SPLit Platform -->
+                    <div class="project-slide" data-project="4">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 order-lg-2">
+                                <div class="project-preview">
+                                    <img src="Assets/Images/SPLit Screenshot/SPLit Screenshot.PNG" 
+                                         alt="SPLit Platform Project" 
+                                         class="img-fluid project-screenshot">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 order-lg-1">
+                                <div class="project-info terminal-text">
+                                    <span class="project-number">04/05</span>
+                                    <h3 class="project-name" data-i18n="project4_title">SPLit Platform</h3>
+                                    <p class="project-desc">
+                                        <span data-i18n="project4_desc">Piattaforma web per gestione spese condivise</span>
+                                    </p>
+                                    <div class="project-tech mb-3">
+                                        <span class="tech-badge">javascript</span>
+                                        <span class="tech-badge">api</span>
+                                        <span class="tech-badge">bootstrap</span>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="https://github.com/Dwebcoding/SPLit-Demo" target="_blank" class="btn btn-outline-primary btn-sm">
+                                            <i class="fab fa-github"></i> Code
+                                        </a>
+                                        <a href="https://dwebcoding.github.io/SPLit-Demo/" target="_blank" class="btn btn-primary btn-sm">
+                                            <i class="fas fa-external-link-alt"></i> Live Demo
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 5: Isla Lido -->
+                    <div class="project-slide" data-project="5">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 order-lg-1">
+                                <div class="project-preview">
+                                    <!-- Isla Lido Screenshot Slider -->
+                                    <div class="island-screenshot-slider">
+                                        <div class="screenshot-container">
+                                            <img src="Assets/Images/Isla Lido Screenshot/Isla Lido Screenshot 1.png" 
+                                                 alt="Isla Lido - Hero Section" 
+                                                 class="img-fluid project-screenshot screenshot-slide active"
+                                                 data-slide="0">
+                                            <img src="Assets/Images/Isla Lido Screenshot/Isla Lido Screenshot 2.png" 
+                                                 alt="Isla Lido - Section 2" 
+                                                 class="img-fluid project-screenshot screenshot-slide"
+                                                 data-slide="1">
+                                            <img src="Assets/Images/Isla Lido Screenshot/Isla Lido Screenshot 3.png" 
+                                                 alt="Isla Lido - Section 3" 
+                                                 class="img-fluid project-screenshot screenshot-slide"
+                                                 data-slide="2">
+                                            <img src="Assets/Images/Isla Lido Screenshot/Isla Lido Screenshot 4.png" 
+                                                 alt="Isla Lido - Footer Section" 
+                                                 class="img-fluid project-screenshot screenshot-slide"
+                                                 data-slide="3">
+                                        </div>
+                                        <div class="screenshot-dots">
+                                            <span class="screenshot-dot active" data-screenshot="0"></span>
+                                            <span class="screenshot-dot" data-screenshot="1"></span>
+                                            <span class="screenshot-dot" data-screenshot="2"></span>
+                                            <span class="screenshot-dot" data-screenshot="3"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 order-lg-2">
+                                <div class="project-info terminal-text">
+                                    <span class="project-number">05/05</span>
+                                    <h3 class="project-name" data-i18n="project5_title">Isla Lido</h3>
+                                    <p class="project-desc">
+                                        <span data-i18n="project5_desc">Sito web moderno e responsive per una destinazione resort balneare</span>
+                                    </p>
+                                    <div class="project-tech mb-3">
+                                        <span class="tech-badge">html</span>
+                                        <span class="tech-badge">css</span>
+                                        <span class="tech-badge">responsive-design</span>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="https://www.isolalido.it/" target="_blank" class="btn btn-outline-primary btn-sm">
+                                            <i class="fas fa-external-link-alt"></i> Visita
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Slider Controls -->
+                <div class="slider-controls">
+                    <button class="slider-btn" id="prevProject" aria-label="Previous project">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    
+                    <div class="slider-dots">
+                        <span class="dot active" data-slide="0"></span>
+                        <span class="dot" data-slide="1"></span>
+                        <span class="dot" data-slide="2"></span>
+                        <span class="dot" data-slide="3"></span>
+                        <span class="dot" data-slide="4"></span>
+                    </div>
+                    
+                    <button class="slider-btn" id="nextProject" aria-label="Next project">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- View All Projects Button -->
+            <div class="text-center mt-5" data-aos="fade-up">
+                <a href="html/projects.html" class="btn btn-primary" data-i18n="skills_cta">Vedi tutti i progetti</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- JavaScript Dependencies -->
+    <script src="js/translations.js"></script>
+    <script src="js/lang.js"></script>
+    <script src="js/seo.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="js/particles-config.js"></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/home-slider.js" defer></script>
+    <script src="js/screenshot-slider.js" defer></script>
+
+</body>
+</html>
