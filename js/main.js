@@ -1,6 +1,16 @@
 // Typewriter effect for hero section
 function typewriterEffect(elementId, lines, speed = 40, callback) {
     const el = document.getElementById(elementId);
+    if (!el) {
+        console.error('Typewriter element not found:', elementId);
+        const fallback = document.createElement('div');
+        fallback.style.color = '#ff5555';
+        fallback.style.textAlign = 'center';
+        fallback.style.fontWeight = 'bold';
+        fallback.innerText = 'Errore: hero-typewriter non trovato.';
+        document.body.prepend(fallback);
+        return;
+    }
     let lineIdx = 0;
     let charIdx = 0;
     let currentLine = '';
@@ -29,6 +39,7 @@ function typewriterEffect(elementId, lines, speed = 40, callback) {
     }
     output = '';
     typeLine();
+    console.log('Typewriter started:', elementId);
 }
 
 document.addEventListener('DOMContentLoaded', function() {
