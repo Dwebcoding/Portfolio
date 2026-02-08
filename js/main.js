@@ -4,6 +4,7 @@ function typewriterEffect(elementId, lines, speed = 40, callback) {
     let lineIdx = 0;
     let charIdx = 0;
     let currentLine = '';
+    let output = '';
     function typeLine() {
         if (lineIdx >= lines.length) {
             if (callback) callback();
@@ -11,21 +12,22 @@ function typewriterEffect(elementId, lines, speed = 40, callback) {
         }
         currentLine = lines[lineIdx];
         charIdx = 0;
-        el.innerHTML += '<span>';
         function typeChar() {
             if (charIdx < currentLine.length) {
-                el.innerHTML = el.innerHTML.slice(0, -7) + currentLine[charIdx] + '</span>';
+                output += currentLine[charIdx];
+                el.innerText = output;
                 charIdx++;
                 setTimeout(typeChar, speed);
             } else {
-                el.innerHTML += '\n';
+                output += '\n';
+                el.innerText = output;
                 lineIdx++;
                 setTimeout(typeLine, speed * 2);
             }
         }
         typeChar();
     }
-    el.innerHTML = '';
+    output = '';
     typeLine();
 }
 
