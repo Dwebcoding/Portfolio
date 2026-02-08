@@ -1,4 +1,3 @@
-/**
  * Internationalization Management System
  * Handles language switching, localStorage persistence, and DOM translation
  * Supported languages: English (en), Italian (it)

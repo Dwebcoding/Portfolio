@@ -54,7 +54,6 @@ document.addEventListener('DOMContentLoaded', function() {
     ];
     typewriterEffect('hero-typewriter', heroLines, 40);
 });
-<<<<<<< HEAD
 /**
  * Main Application Controller
  * Handles DOM manipulation, event delegation, and performance optimizations

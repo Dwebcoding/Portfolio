@@ -1,4 +1,3 @@
-// particles.js configuration for hero background
 particlesJS('hero-bg', {
   particles: {
     number: {

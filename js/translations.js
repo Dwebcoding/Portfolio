@@ -1,4 +1,3 @@
-/**
  * Internationalization Data Structure
  * Centralized translation strings for multilingual support
  * Supported languages: English (en), Italian (it)
