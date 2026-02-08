@@ -62,12 +62,6 @@ a:hover {
 
 /* Bootstrap Framework Overrides */
 .navbar {
-  background-color: rgba(13, 17, 23, 0.8);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--border-color);
-}
-
-.home .navbar {
   background-color: transparent;
   backdrop-filter: none;
   border-bottom: none;
