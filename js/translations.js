@@ -22,6 +22,7 @@ const translations = {
     hero_output_focus: '<span class="terminal-key">focus</span>: ["Structure", "Simplicity", "Performance"]',
     hero_output_status: '<span class="terminal-key">status</span>: "Open to collaborations and opportunities"',
     hero_cta: "view projects",
+    hero_description: "I am Lorenzo Delibero, a passionate web developer specializing in modern and high-performance front-end solutions. I create innovative digital experiences using HTML, CSS, JavaScript and frameworks like Bootstrap, with a focus on responsive design and performance optimization.",
     
     // Skills Section
     skills_title: "tech_stack",
@@ -116,6 +117,7 @@ const translations = {
     hero_output_focus: '<span class="terminal-key">focus</span>: ["Struttura", "Semplicità", "Performance"]',
     hero_output_status: '<span class="terminal-key">status</span>: "Aperto a collaborazioni e opportunità"',
     hero_cta: "visualizza progetti",
+    hero_description: "Sono Lorenzo Delibero, uno sviluppatore web appassionato specializzato in soluzioni front-end moderne e performanti. Creo esperienze digitali innovative utilizzando HTML, CSS, JavaScript e framework come Bootstrap, con un focus su design responsive e ottimizzazione delle prestazioni.",
     
     // Skills Section
     skills_title: "stack_tecnologico",

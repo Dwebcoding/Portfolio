@@ -206,6 +206,18 @@ class LanguageManager {
       await new Promise(resolve => setTimeout(resolve, 400));
       if (currentId !== this.terminalAnimationId) return;
 
+      // Description animation
+      const descElement = document.getElementById('hero-description');
+      if (descElement) {
+        const descText = descElement.dataset.i18n ? translations[this.currentLang][descElement.dataset.i18n] : descElement.textContent;
+        descElement.textContent = '';
+        await this.typewriter(descElement, descText, 30);
+        if (currentId !== this.terminalAnimationId) return;
+      }
+
+      await new Promise(resolve => setTimeout(resolve, 400));
+      if (currentId !== this.terminalAnimationId) return;
+
       // CTA animation
       const isInSubfolder = window.location.pathname.includes('/html/');
       const pathPrefix = isInSubfolder ? '' : 'html/';

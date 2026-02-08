@@ -950,3 +950,40 @@ a:hover {
   background: #fff;
   color: #2ea043;
 }
+
+/* Hero Description */
+.hero-description p {
+  color: var(--text-color);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+
+.matrix-text {
+  font-family: 'Courier New', monospace;
+  color: #00ff00;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #00ff00;
+  position: relative;
+  overflow: hidden;
+}
+
+.matrix-text::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(0, 255, 0, 0.1), transparent);
+  animation: matrix-scan 2s infinite;
+}
+
+@keyframes matrix-scan {
+  0% { left: -100%; }
+  100% { left: 100%; }
+}
