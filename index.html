@@ -28,7 +28,9 @@
     <link rel="canonical" href="https://dwebcoding.github.io/">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="Assets/Images/Portfolio/Logo White.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Assets/Images/Portfolio/Logo BIG 2.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Assets/Images/Portfolio/Logo BIG 2.png">
+    <link rel="apple-touch-icon" href="Assets/Images/Portfolio/Logo BIG 2.png">
 
     <!-- Google Fonts: JetBrains Mono -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,19 +40,22 @@
     <!-- External CDN Dependencies -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <!-- Custom Stylesheets -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/home-projects.css">
 </head>
-<body>
+<body class="home">
+    <!-- Particles Background -->
+    <div id="particles-bg" style="position:fixed;top:0;left:0;width:100%;height:100vh;z-index:-1;pointer-events:none;"></div>
 
     <!-- Primary Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
         <div class="container">
 <a class="navbar-brand" href="index.html">
-  <img src="Assets/Images/Portfolio/Logo White.png" alt="D Webcoding Logo" height="50">
+  <img src="Assets/Images/Portfolio/Logo White.png" alt="D Webcoding Logo" height="60">
 </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -84,7 +89,6 @@
     <!-- Hero Section with Terminal Animation -->
     <main class="container">
         <section id="hero-terminal" class="hero-section">
-            <div id="hero-bg" style="position:absolute;top:0;left:0;width:100%;height:100%;z-index:0;"></div>
             <div class="hero-text terminal-text" style="position:relative;z-index:1;">
                 <div class="terminal-centered">
                     <pre class="terminal-pre" id="hero-typewriter"></pre>
@@ -134,6 +138,10 @@
                         <div class="tech-item text-center">
                             <i class="fab fa-linux fa-3x text-secondary"></i>
                             <div>Linux</div>
+                        </div>
+                        <div class="tech-item text-center">
+                            <i class="fab fa-windows fa-3x text-info"></i>
+                            <div>Windows</div>
                         </div>
                     </div>
                 </div>
@@ -374,8 +382,56 @@
 
     </main>
 
-    <!-- Footer Placeholder -->
-    <div id="footer-placeholder"></div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5><i class="fas fa-user-astronaut"></i> <span data-i18n="footer_identity_name"></span></h5>
+                    <p class="mb-1" data-i18n="footer_identity_role"></p>
+                    <p class="footer-tagline" data-i18n="footer_identity_tagline"></p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5><i class="fas fa-sitemap"></i> <span data-i18n="footer_nav_title"></span></h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" data-i18n="footer_nav_home"></a></li>
+                        <li><a href="html/projects.html" data-i18n="footer_nav_projects"></a></li>
+                        <li><a href="html/about.html" data-i18n="footer_nav_about"></a></li>
+                        <li><a href="html/contact.html" data-i18n="footer_nav_contact"></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5><i class="fas fa-satellite-dish"></i> <span data-i18n="footer_contact_title"></span></h5>
+                    <div class="social-icons">
+                        <a href="mailto:d.webcoding@gmail.com" aria-label="Email">
+                            <i class="fas fa-envelope"></i> Email
+                        </a>
+                        <a href="https://github.com/Dwebcoding/Dwebcoding-Portfolio" target="_blank" rel="noopener" aria-label="GitHub">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="https://www.linkedin.com/in/dwebcoding/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                        <a href="https://wa.me/393882566019 " target="_blank" rel="noopener" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i> WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="mb-2 text-center">
+                    © 2026 Lorenzo Delibero. Realizzato con HTML, CSS e JavaScript vanilla.
+                </p>
+                <p class="mb-2 text-center">
+                    Tutti i diritti riservati. La riproduzione non autorizzata è vietata.
+                </p>
+                <p class="mb-0 text-center">
+                    <a href="html/privacy.html">Privacy Policy</a> | 
+                    <a href="html/terms.html">Termini di Servizio</a>
+                </p>
+            </div>
+        </div>
+    </footer>
 
     <!-- JavaScript Dependencies -->
     <script src="js/translations.js"></script>
@@ -384,8 +440,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <script src="js/particles-config.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/particles-config.js"></script>
     <script src="js/home-slider.js" defer></script>
     <script src="js/screenshot-slider.js" defer></script>
 

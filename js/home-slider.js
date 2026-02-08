@@ -1,3 +1,4 @@
+/*
  * Home Projects Slider
  * Interactive project showcase with smooth transitions
  */

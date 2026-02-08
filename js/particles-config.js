@@ -1,10 +1,12 @@
-particlesJS('hero-bg', {
+window.addEventListener('load', function() {
+  setTimeout(function() {
+    if (document.getElementById('particles-bg') && typeof particlesJS !== 'undefined') {
+      particlesJS('particles-bg', {
   particles: {
     number: {
-      value: 60,
+      value: 150,
       density: {
-        enable: true,
-        value_area: 800
+        enable: false
       }
     },
     color: {
@@ -21,7 +23,7 @@ particlesJS('hero-bg', {
       }
     },
     opacity: {
-      value: 0.3,
+      value: 0.35,
       random: true,
       anim: {
         enable: false
@@ -38,7 +40,7 @@ particlesJS('hero-bg', {
       enable: true,
       distance: 150,
       color: '#ffffff',
-      opacity: 0.2,
+      opacity: 0.3,
       width: 1
     },
     move: {
@@ -76,82 +78,6 @@ particlesJS('hero-bg', {
   },
   retina_detect: true
 });
-// particles.js configuration for hero background
-particlesJS('hero-bg', {
-  particles: {
-    number: {
-      value: 60,
-      density: {
-        enable: true,
-        value_area: 800
-      }
-    },
-    color: {
-      value: '#ffffff'
-    },
-    shape: {
-      type: 'circle',
-      stroke: {
-        width: 0,
-        color: '#000000'
-      },
-      polygon: {
-        nb_sides: 5
-      }
-    },
-    opacity: {
-      value: 0.3,
-      random: true,
-      anim: {
-        enable: false
-      }
-    },
-    size: {
-      value: 6,
-      random: true,
-      anim: {
-        enable: false
-      }
-    },
-    line_linked: {
-      enable: true,
-      distance: 150,
-      color: '#ffffff',
-      opacity: 0.2,
-      width: 1
-    },
-    move: {
-      enable: true,
-      speed: 2,
-      direction: 'none',
-      random: false,
-      straight: false,
-      out_mode: 'out',
-      bounce: false
     }
-  },
-  interactivity: {
-    detect_on: 'canvas',
-    events: {
-      onhover: {
-        enable: true,
-        mode: 'repulse'
-      },
-      onclick: {
-        enable: true,
-        mode: 'push'
-      },
-      resize: true
-    },
-    modes: {
-      repulse: {
-        distance: 100,
-        duration: 0.4
-      },
-      push: {
-        particles_nb: 4
-      }
-    }
-  },
-  retina_detect: true
+  }, 100);
 });
