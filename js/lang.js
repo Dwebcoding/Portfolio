@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /**
  * Internationalization Management System
  * Handles language switching, localStorage persistence, and DOM translation

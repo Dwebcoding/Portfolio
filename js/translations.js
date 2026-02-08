@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /**
  * Internationalization Data Structure
  * Centralized translation strings for multilingual support

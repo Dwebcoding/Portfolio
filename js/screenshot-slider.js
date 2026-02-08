@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /**
  * Island Screenshot Slider
  * Handles screenshot gallery navigation for project cards
