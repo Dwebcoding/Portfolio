@@ -812,3 +812,42 @@ a:hover {
         padding: 1rem;
     }
 }
+
+.terminal-centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 40vh;
+}
+.terminal-pre {
+  background: #161b22;
+  color: #c9d1d9;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.2rem;
+  padding: 2rem 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.15);
+  margin-bottom: 1.5rem;
+  text-align: left;
+  max-width: 600px;
+}
+.terminal-cmd {
+  color: #2ea043;
+  font-weight: bold;
+}
+.hero-cta-link {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 2rem;
+  background: #2ea043;
+  color: #fff;
+  border-radius: 6px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+.hero-cta-link:hover {
+  background: #238636;
+}
