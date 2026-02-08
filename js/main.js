@@ -1,3 +1,46 @@
+// Typewriter effect for hero section
+function typewriterEffect(elementId, lines, speed = 40, callback) {
+    const el = document.getElementById(elementId);
+    let lineIdx = 0;
+    let charIdx = 0;
+    let currentLine = '';
+    function typeLine() {
+        if (lineIdx >= lines.length) {
+            if (callback) callback();
+            return;
+        }
+        currentLine = lines[lineIdx];
+        charIdx = 0;
+        el.innerHTML += '<span>';
+        function typeChar() {
+            if (charIdx < currentLine.length) {
+                el.innerHTML = el.innerHTML.slice(0, -7) + currentLine[charIdx] + '</span>';
+                charIdx++;
+                setTimeout(typeChar, speed);
+            } else {
+                el.innerHTML += '\n';
+                lineIdx++;
+                setTimeout(typeLine, speed * 2);
+            }
+        }
+        typeChar();
+    }
+    el.innerHTML = '';
+    typeLine();
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    const heroLines = [
+        '$ who_am_i',
+        'name: "Lorenzo Delibero"',
+        'role: "Web Developer"',
+        'focus: ["Structure", "Simplicity", "Performance"]',
+        'status: "Open to collaborations and opportunities"',
+        '',
+        '$ view projects'
+    ];
+    typewriterEffect('hero-typewriter', heroLines, 40);
+});
 <<<<<<< HEAD
 /**
  * Main Application Controller
