@@ -851,3 +851,63 @@ a:hover {
 .hero-cta-link:hover {
   background: #238636;
 }
+
+.hero-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+.hero-link-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1.5rem;
+  border-radius: 6px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1rem;
+  text-decoration: none;
+  background: #21262c;
+  color: #c9d1d9;
+  border: 1px solid #30363d;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+}
+.hero-link-btn.github {
+  background: #161b22;
+  color: #fff;
+  border-color: #2ea043;
+}
+.hero-link-btn.linkedin {
+  background: #0a66c2;
+  color: #fff;
+  border-color: #0a66c2;
+}
+.hero-link-btn.email {
+  background: #2ea043;
+  color: #fff;
+  border-color: #2ea043;
+}
+.hero-link-btn.cv {
+  background: #c9d1d9;
+  color: #161b22;
+  border-color: #c9d1d9;
+}
+.hero-link-btn:hover {
+  background: #2ea043;
+  color: #fff;
+  border-color: #2ea043;
+}
+.hero-link-btn.github:hover {
+  background: #238636;
+}
+.hero-link-btn.linkedin:hover {
+  background: #084c8d;
+}
+.hero-link-btn.email:hover {
+  background: #238636;
+}
+.hero-link-btn.cv:hover {
+  background: #fff;
+  color: #2ea043;
+}
