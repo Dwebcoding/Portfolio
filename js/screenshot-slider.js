@@ -78,4 +78,4 @@ document.addEventListener('DOMContentLoaded', function() {
         childList: true,
         subtree: true
     });
-
+});
