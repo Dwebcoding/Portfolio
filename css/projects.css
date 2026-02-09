@@ -13,7 +13,6 @@
     display: flex;
     flex-direction: column;
     transition: all 0.3s ease;
-}
 
 /* Hover effect: border highlight and elevation */
 .project-card:hover {
@@ -92,20 +91,20 @@
 
 .project-content .tech-list span {
     display: inline-block;
-    background-color: var(--border-color);
-    color: var(--secondary-color);
-    padding: 4px 10px;
-    font-size: 0.75rem;
+    background: none;
+    color: inherit;
+    padding: 0;
+    font-size: 1.3em;
     margin-right: 6px;
     margin-bottom: 6px;
-    border-radius: 3px;
-    transition: all 0.2s ease;
+    border-radius: 0;
+    transition: none;
 }
 
 /* Tech badge hover: enhanced visibility */
 .project-content .tech-list span:hover {
-    background-color: var(--primary-color);
-    color: var(--background-color);
+    background: none;
+    color: var(--primary-color);
 }
 
 .project-content .tech-label::before {

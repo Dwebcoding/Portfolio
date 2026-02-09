@@ -1,3 +1,46 @@
+.tech-stack .tech-item img[alt="VS Code"] {
+    transform: scale(1.2);
+    padding-top: 0.25em;
+}
+.tech-stack .tech-item img[alt="11ty"] {
+    padding-bottom: 0.5em;
+    margin-bottom: 0.65em;
+}
+.tech-stack .tech-item img[alt="VS Code"] {
+    margin-bottom: 0.65em;
+}
+.tech-stack .tech-item img[alt="GitHub Pages"],
+.tech-stack .tech-item img[alt="Node.js"] {
+    transform: scale(2.1);
+}
+.tech-stack .tech-item img[alt="Hugo"],
+.tech-stack .tech-item img[alt="11ty"] {
+    transform: scale(1.85);
+    padding: 0 0.35em;
+    margin-bottom: 0.65em;
+}
+.tech-stack .tech-item {
+    overflow: hidden;
+}
+.tech-stack .tech-item img {
+    transform: scale(1.35);
+}
+/* Uniforma dimensioni icone stack tecnologies */
+.tech-stack .tech-item i {
+    font-size: 2em !important;
+    width: 2em;
+    height: 2em;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.tech-stack .tech-item img {
+    width: 2em !important;
+    height: 2em !important;
+    object-fit: contain;
+    display: inline-block;
+    vertical-align: middle;
+}
 /**
  * Terminal-Inspired Portfolio Stylesheet
  * Theme: GitHub Dark with Terminal Aesthetics
@@ -211,16 +254,13 @@ a:hover {
 }
 
 #particles-bg {
-  position: absolute !important;
-  top: 0 !important;
-  left: 0 !important;
-  width: 100% !important;
-  height: 100% !important;
-  z-index: -1 !important;
-  pointer-events: none !important;
-}
-  z-index: -1 !important;
-  pointer-events: none !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    z-index: -1 !important;
+    pointer-events: none !important;
 }
 
  .hero-text {
