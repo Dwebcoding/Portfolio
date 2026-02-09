@@ -44,6 +44,32 @@ document.addEventListener('DOMContentLoaded', function() {
                     dots[currentSlide].classList.add('active');
                 }
             };
+
+            // Touch swipe support for mobile/tablet
+            let startX = 0;
+            let endX = 0;
+            if (container) {
+                container.addEventListener('touchstart', (e) => {
+                    startX = e.touches[0].clientX;
+                });
+                container.addEventListener('touchmove', (e) => {
+                    endX = e.touches[0].clientX;
+                });
+                container.addEventListener('touchend', () => {
+                    if (startX && endX) {
+                        const diff = startX - endX;
+                        if (Math.abs(diff) > 40) {
+                            if (diff > 0) {
+                                showSlide(currentSlide + 1); // swipe left
+                            } else {
+                                showSlide(currentSlide - 1); // swipe right
+                            }
+                        }
+                    }
+                    startX = 0;
+                    endX = 0;
+                });
+            }
             
             // Click handlers for dots
             dots.forEach((dot, index) => {

@@ -1,3 +1,37 @@
+/* Tablet landscape: 1024px and below */
+@media (max-width: 1024px) {
+    .project-card {
+        border-radius: 6px;
+    }
+    .project-image-wrapper {
+        height: 220px;
+        padding-bottom: 50%;
+    }
+    .project-title {
+        font-size: 1.2rem;
+    }
+}
+
+/* Phablet: 600px and below */
+@media (max-width: 600px) {
+    .project-card {
+        border-radius: 4px;
+    }
+    .project-image-wrapper {
+        height: 140px;
+        padding-bottom: 60%;
+    }
+    .project-title {
+        font-size: 0.95rem;
+    }
+    .project-description {
+        font-size: 0.8rem;
+    }
+    .project-actions .btn {
+        min-height: 48px;
+        font-size: 0.8rem;
+    }
+}
 /**
  * Project Portfolio Component Styles
  * Screenshot-based project cards with GitHub integration
@@ -12,13 +46,14 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
 
 /* Hover effect: border highlight and elevation */
 .project-card:hover {
     border-color: var(--primary-color);
-    box-shadow: 0 0 20px rgba(46, 160, 67, 0.15);
-    transform: translateY(-4px);
+    box-shadow: 0 8px 32px rgba(46,160,67,0.18), 0 2px 8px rgba(0,0,0,0.12);
+    transform: translateY(-8px) scale(1.03);
+    z-index: 2;
 }
 
 /* Project Image Section */
@@ -31,6 +66,10 @@
     overflow: hidden;
     margin: 0;
     background-color: var(--background-color);
+    /* Ripristino impostazioni originali */
+    /* Rimosso effetto rilievo */
+    /* Rimosso effetto rilievo */
+    /* Rimosso effetto rilievo */
 }
 
 /* Image: object-fit prevents distortion */
@@ -229,12 +268,14 @@
     position: relative;
     width: 100%;
     height: 100%;
+    min-height: 250px;
 }
 
 .screenshot-container {
     position: relative;
     width: 100%;
     height: 100%;
+    min-height: 250px;
     overflow: hidden;
 }
 
