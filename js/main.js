@@ -196,6 +196,7 @@ function updateNavigationPaths() {
 
 // Inizializzazione
 document.addEventListener('DOMContentLoaded', () => {
+    loadFooter();
     initHeroCTA();
     updateNavigationPaths();
     languageManager.init();
