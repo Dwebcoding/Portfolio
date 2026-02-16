@@ -5,7 +5,7 @@ function loadNavbar() {
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
         <div class="container">
             <a class="navbar-brand" href="/index.html">
-                <img src="/Portfolio/Assets/Images/Portfolio/Logo%20BIG%202.png" alt="D Webcoding Logo" height="60">
+                <img src="../Assets/Images/Portfolio/Logo%20BIG%202.png" alt="D Webcoding Logo" height="60">
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
